@@ -5,7 +5,8 @@
 
         background-image: url('../../../images/bg.jpg');
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: right bottom;
+        background-size: 50rem;
 
         display: flex;        
         flex-direction: column;
@@ -15,6 +16,8 @@
 
     .screen .infos{
         width: 90vw;
+
+        margin-bottom: 30rem;
         
         display: flex;
         align-items: center;

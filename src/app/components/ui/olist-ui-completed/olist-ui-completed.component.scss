@@ -1,5 +1,15 @@
 :host{
-    app-olist-ui-info-card{
+    .card{
         background-color: var(--principal-red);
+    }
+    
+    .completed{        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .completed .material-icons{
+        margin-right: 0.8rem;
     }
 }
