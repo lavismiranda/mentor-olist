@@ -20,6 +20,7 @@ import { OlistUiInfoCardComponent } from './components/ui/olist-ui-info-card/oli
 import { OlistUiOpointsComponent } from './components/ui/olist-ui-opoints/olist-ui-opoints.component';
 import { OlistUiCompletedComponent } from './components/ui/olist-ui-completed/olist-ui-completed.component';
 import { OlistUiSentComponent } from './components/ui/olist-ui-sent/olist-ui-sent.component';
+import { OlistUiEvaluationComponent } from './components/ui/olist-ui-evaluation/olist-ui-evaluation.component';
 export const isMock = environment.mock;
 
 @NgModule({
@@ -31,7 +32,8 @@ export const isMock = environment.mock;
     OlistUiInfoCardComponent,
     OlistUiOpointsComponent,
     OlistUiCompletedComponent,
-    OlistUiSentComponent
+    OlistUiSentComponent,
+    OlistUiEvaluationComponent
   ],
   imports: [
     BrowserModule,
