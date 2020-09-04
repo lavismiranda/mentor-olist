@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: var(--e-global-typography-primary-font-family); }
+
+:root {
+    font-size: 60%;
+    
+    --principal-blue: #0C29DC;
+    --principal-green: #0DC78B;
+    --principal-purple: #6A00A3;
+    --principal-red: #E64C2D;
+    --principal-yellow: #EDAD00;
+    --principal-grey: #9499b3;
+    
+    --e-global-typography-primary-font-family: "Soleil";
+    --e-global-typography-primary-font-weight: 600;
+}

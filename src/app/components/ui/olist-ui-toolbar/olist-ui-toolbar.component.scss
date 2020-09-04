@@ -1,9 +1,41 @@
+@import "../../../../styles.scss";
+
 :host {
     .olist-toolbar {
+        width: 90vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-self: right;
+        
         background: #fff;
     }
-    .olist-title {
-        color: #0c29d0;
-        font-size: 32px;
+    
+    .olist-toolbar a{
+        text-decoration: none;
+        color: var(--principal-grey);
+
+        font-size: 2.0rem;
+        font-weight: 300;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .olist-toolbar a .score{
+        color: var(--principal-blue);
+        font-weight: 800;
+    }
+
+    .olist-toolbar a .user{
+        width: 100%;
+        height: 100%;
+
+        color: var(--principal-purple);
+        font-weight: 800;
+
+        border: 2px solid var(--principal-purple);
     }
 }
