@@ -36,22 +36,6 @@ export class AppComponent {
   title = 'olist-mentor-app ';
    displayedColumns: string[] = ['Vendedor', 'Ativo Há', 'Avaliação'];
   dataSource = ELEMENT_DATA;
-  constructor(http: HttpClient){
-    http.get<Seller[]>('http://localhost:4200/api/sellers').subscribe( res => {
-        this.sellers = res;
-        console.log(this.sellers);
-    });
-
-    http.get<Mentor>('http://localhost:4200/api/mentor').subscribe( res => {
-        this.mentor = res;
-        console.log(this.mentor);
-        this.title = this.title + this.mentor.name;
-    });
-
-    http.get<Mentor[]>('http://localhost:4200/api/mentors').subscribe( res => {
-        this.mentors = res;
-        this.dataSource = this.mentors;
-        console.log(this.mentors);
-    });
+  constructor(){
   }
 }
