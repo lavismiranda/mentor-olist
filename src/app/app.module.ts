@@ -15,6 +15,8 @@ import { OlistUiTableComponent } from './components/ui/olist-ui-table/olist-ui-t
 import { OlistUiInfoComponent } from './components/ui/olist-ui-info/olist-ui-info.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { OlistScreenDashboardComponent } from './components/screen/olist-screen-dashboard/olist-screen-dashboard.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 export const isMock = environment.mock;
 
 @NgModule({
@@ -32,7 +34,9 @@ export const isMock = environment.mock;
     HttpClientModule,
     MatTableModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatRadioModule,
+    FormsModule
   ],
   providers: [{
       provide: HTTP_INTERCEPTORS,
