@@ -12,11 +12,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { OlistUiToolbarComponent } from './components/ui/olist-ui-toolbar/olist-ui-toolbar.component';
 import { OlistUiTableComponent } from './components/ui/olist-ui-table/olist-ui-table.component';
-import { OlistUiInfoComponent } from './components/ui/olist-ui-info/olist-ui-info.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { OlistScreenDashboardComponent } from './components/screen/olist-screen-dashboard/olist-screen-dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
+import { OlistUiInfoCardComponent } from './components/ui/olist-ui-info-card/olist-ui-info-card.component';
+import { OlistUiOpointsComponent } from './components/ui/olist-ui-opoints/olist-ui-opoints.component';
+import { OlistUiCompletedComponent } from './components/ui/olist-ui-completed/olist-ui-completed.component';
+import { OlistUiSentComponent } from './components/ui/olist-ui-sent/olist-ui-sent.component';
 export const isMock = environment.mock;
 
 @NgModule({
@@ -24,8 +27,11 @@ export const isMock = environment.mock;
     AppComponent,
     OlistUiToolbarComponent,
     OlistUiTableComponent,
-    OlistUiInfoComponent,
-    OlistScreenDashboardComponent
+    OlistScreenDashboardComponent,
+    OlistUiInfoCardComponent,
+    OlistUiOpointsComponent,
+    OlistUiCompletedComponent,
+    OlistUiSentComponent
   ],
   imports: [
     BrowserModule,

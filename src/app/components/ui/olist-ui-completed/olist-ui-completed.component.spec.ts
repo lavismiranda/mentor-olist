@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OlistUiInfoComponent } from './olist-ui-info.component';
+import { OlistUiCompletedComponent } from './olist-ui-completed.component';
 
-describe('OlistUiInfoComponent', () => {
-  let component: OlistUiInfoComponent;
-  let fixture: ComponentFixture<OlistUiInfoComponent>;
+describe('OlistUiCompletedComponent', () => {
+  let component: OlistUiCompletedComponent;
+  let fixture: ComponentFixture<OlistUiCompletedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OlistUiInfoComponent ]
+      declarations: [ OlistUiCompletedComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OlistUiInfoComponent);
+    fixture = TestBed.createComponent(OlistUiCompletedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

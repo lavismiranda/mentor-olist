@@ -1,13 +1,9 @@
 :host{
-    div{
+    .container{
         display: flex;
         align-items: center;
         justify-content: center;
         
         color: '#fff';
-    }
-
-    .oPoints{
-        background-color: var(--principal-green);
     }
 }
