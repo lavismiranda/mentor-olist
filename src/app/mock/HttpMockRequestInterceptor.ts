@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import * as sellers from './data/sellers.json'
 import * as mentor from './data/mentor.json'
 import * as mentors from './data/mentors.json'
+import * as seller from './data/seller.json'
 
 const urls = [
     {
@@ -17,6 +18,10 @@ const urls = [
      {
         url: 'http://localhost:4200/api/mentor',
         json: mentor
+    },
+    {
+        url: 'http://localhost:4200/api/seller',
+        json: seller
     }
 ];
 

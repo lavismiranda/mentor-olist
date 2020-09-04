@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-olist-ui-table',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./olist-ui-table.component.scss']
 })
 export class OlistUiTableComponent implements OnInit {
-
+  @Input() users;
   constructor() { }
-
   ngOnInit() {
+    console.log("lista de users da tabela", this.users);
   }
 
 }

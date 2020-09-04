@@ -7,7 +7,11 @@ import { Seller } from 'src/app/model/seller';
 })
 export class SellerService {
   constructor(private http: HttpClient) { }
-  private getSellers(){
-     this.http.get<Seller[]>('http://localhost:4200/api/sellers');
+  public getSellers(){
+     return this.http.get<Seller[]>('http://localhost:4200/api/sellers');
+  }
+
+   public getSeller(){
+     return this.http.get<Seller>('http://localhost:4200/api/seller');
   }
 }

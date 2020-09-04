@@ -5,6 +5,7 @@
     "sent": 20,
     "completed": 5,
     "evaluation": 5,
+    "enableMentor": true,
     "feedbacks": [{
             "name": "Luiza Aguiar Oliveira",
             "feedback": "A mentoria foi muito boa!! Gostaria também de deixar registrado meus elogios a atenção, profissionalismo e disponibilidade do instrutor.",

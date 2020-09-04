@@ -7,10 +7,10 @@ import { Mentor } from 'src/app/model/mentor';
 })
 export class MentorService {
   constructor(private http: HttpClient) { }
-  private getMentor(){
+  public getMentor(){
     return this.http.get<Mentor>('http://localhost:4200/api/mentor');
   }
-  private getMentors(){
+  public getMentors(){
     return this.http.get<Mentor[]>('http://localhost:4200/api/mentors');
   }
 

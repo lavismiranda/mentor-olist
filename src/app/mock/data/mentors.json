@@ -2,59 +2,68 @@
         "id": 2,
         "name": "José Jose da Silva Souza",
         "since": "10/03/2020",
-        "evaluation": 4
+        "evaluation": 4,
+        "enableMentor": true
 
     },
     {
         "id": 3,
         "name": "Francisco Souza Cayto",
         "since": "01/01/2020",
-        "evaluation": 5
+        "evaluation": 5,
+        "enableMentor": true
 
     },
     {
         "id": 4,
         "name": "Fernanda Miranda Rocha",
         "since": "15/04/2020",
-        "evaluation": 5
+        "evaluation": 5,
+        "enableMentor": true
 
     },
     {
         "id": 5,
         "name": "Sandra Lessa Madero",
         "since": "26/06/2020",
-        "evaluation": 3
+        "evaluation": 3,
+        "enableMentor": true
 
     },
     {
         "id": 6,
         "name": "Vanessa Santos Pereira",
         "since": "03/01/2018",
-        "evaluation": 5
+        "evaluation": 5,
+        "enableMentor": true
 
     }, {
         "id": 7,
         "name": "Bianca Barbosa Lopes",
         "since": "10/12/2019",
-        "evaluation": 4
+        "evaluation": 4,
+        "enableMentor": true
 
     }, {
         "id": 8,
         "name": "Eduardo Carmo Filho",
         "since": "12/08/2020",
-        "evaluation": 4.5
+        "evaluation": 4.5,
+        "enableMentor": true
 
     }, {
         "id": 9,
         "name": "Raimundo Goush Costa",
         "since": "01/08/2019",
-        "evaluation": 4
+        "evaluation": 4,
+        "enableMentor": true
 
     }, {
         "id": 10,
         "name": "Rodrigo Almeida Prado",
         "since": "10/12/2018",
-        "evaluation": 5
+        "evaluation": 5,
+        "enableMentor": true
 
     }
 ]
