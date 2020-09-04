@@ -10,10 +10,11 @@ import { HttpMockRequestInterceptor } from './mock/HttpMockRequestInterceptor';
 import { HttpRequestInterceptor } from './mock/HttpRequestInterceptor';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { OlistUiToolbarComponent } from './components/olist-ui-toolbar/olist-ui-toolbar.component';
-import { OlistUiTableComponent } from './components/olist-ui-table/olist-ui-table.component';
-import { OlistUiInfoComponent } from './components/olist-ui-info/olist-ui-info.component';
+import { OlistUiToolbarComponent } from './components/ui/olist-ui-toolbar/olist-ui-toolbar.component';
+import { OlistUiTableComponent } from './components/ui/olist-ui-table/olist-ui-table.component';
+import { OlistUiInfoComponent } from './components/ui/olist-ui-info/olist-ui-info.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { OlistScreenDashboardComponent } from './components/screen/olist-screen-dashboard/olist-screen-dashboard.component';
 export const isMock = environment.mock;
 
 @NgModule({
@@ -21,7 +22,8 @@ export const isMock = environment.mock;
     AppComponent,
     OlistUiToolbarComponent,
     OlistUiTableComponent,
-    OlistUiInfoComponent
+    OlistUiInfoComponent,
+    OlistScreenDashboardComponent
   ],
   imports: [
     BrowserModule,
