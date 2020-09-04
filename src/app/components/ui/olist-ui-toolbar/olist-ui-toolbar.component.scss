@@ -1,5 +1,3 @@
-@import "../../../../styles.scss";
-
 :host {
     .olist-toolbar {
         width: 90vw;
@@ -11,27 +9,35 @@
         
         background: #fff;
     }
+
+    .olist-toolbar .bar{
+        width: 42%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     
     .olist-toolbar a{
         text-decoration: none;
         color: var(--principal-grey);
 
         font-size: 2.0rem;
-        font-weight: 300;
+        font-weight: 400;
 
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .olist-toolbar a .score{
+    .olist-toolbar .bar .score{
         color: var(--principal-blue);
         font-weight: 800;
     }
 
-    .olist-toolbar a .user{
-        width: 100%;
-        height: 100%;
+    .olist-toolbar .login .user{
+        width: 15rem;
+        height: 3rem;
 
         color: var(--principal-purple);
         font-weight: 800;

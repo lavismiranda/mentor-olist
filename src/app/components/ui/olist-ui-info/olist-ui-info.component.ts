@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './olist-ui-info.component.html',
   styleUrls: ['./olist-ui-info.component.scss']
 })
+
 export class OlistUiInfoComponent implements OnInit {
 
   constructor() { }
