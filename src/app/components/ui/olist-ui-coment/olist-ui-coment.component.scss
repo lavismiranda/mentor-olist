@@ -1,12 +1,12 @@
 :host{
     .coment-container{
-        width: 50vw;
+        width: 70vw;
 
         background-color: var(--light-grey);
         
         color: #333333;
 
-        margin-top: 2rem;
+        margin-top: 1.5rem;
 
         display: flex;
         align-items: center;
@@ -30,7 +30,7 @@
     }
 
     .coment{
-        width: 70%;
+        width: 80%;
         
         font-size: 1.8rem;
         text-align: justify;
