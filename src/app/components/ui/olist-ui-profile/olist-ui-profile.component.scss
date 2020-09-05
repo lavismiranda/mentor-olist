@@ -1,0 +1,19 @@
+:host{
+    .card{
+        background-color: var(--light-grey);
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 4rem;
+        color: var(--principal-purple); 
+    }
+
+    span{
+        font-size: 4rem;
+        margin-right: 1rem;               
+    }
+}

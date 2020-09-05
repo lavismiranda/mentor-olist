@@ -1,0 +1,44 @@
+:host{
+    .coment-container{
+        width: 50vw;
+
+        background-color: var(--light-grey);
+        
+        color: #333333;
+
+        margin-top: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .name{
+        width: 20%;
+
+        font-size: 2.8rem;
+        font-weight: 800;
+
+        padding: 0 3rem;
+
+        display: flex;
+        justify-content: left;
+    }
+
+    .name span{
+        color: var(--principal-yellow); 
+    }
+
+    .coment{
+        width: 70%;
+        
+        font-size: 1.8rem;
+        text-align: justify;
+        
+        padding: 0 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
