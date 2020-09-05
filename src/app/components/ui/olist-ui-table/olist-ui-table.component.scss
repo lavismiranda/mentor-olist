@@ -1,0 +1,23 @@
+:host{
+    table {
+        width: 60vw;
+    }
+      
+    td, th {
+        background-color: #C0BFD6;
+        text-align: left;
+        padding: 12px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #C0BFD6 !important;
+    }
+
+    .material-icons{
+        color: var(--principal-purple);
+    }
+
+    .material-icons .apply{
+        text-align: center;
+    }
+}
