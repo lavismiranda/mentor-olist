@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UseExistingWebDriver } from 'protractor/built/driverProviders';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-olist-ui-table',
@@ -8,9 +8,15 @@ import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 })
 export class OlistUiTableComponent implements OnInit {
   @Input() users;
-  constructor() { }
+  @Input() person;
+  constructor(private router: Router) { }
   ngOnInit() {
-    console.log("lista de users da tabela", this.users);
   }
+  arrayOne(n: number): any[] {
+    return Array(n);
+  }
+  goToProfile(user: any) {
+        this.router.navigateByUrl('profile');
+};
 
 }

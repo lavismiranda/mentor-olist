@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-olist-ui-opoints',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OlistUiOpointsComponent implements OnInit {
 
+  @Input() oPoints;
+  points: number;
+  
   constructor() { }
 
   ngOnInit() {
+    this.points = this.oPoints;
   }
 
 }

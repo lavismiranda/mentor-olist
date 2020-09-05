@@ -1,15 +1,16 @@
-:host{
-    .card{
+:host {
+    .card {
         background-color: var(--principal-green);
     }
-    
-    .oPoints{        
+    .oPoints {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .oPoints .material-icons{
+    .oPoints .material-icons {
         margin-right: 1.4rem;
+    }
+    .card .disabled {
+        background-color: var(--light-grey);
     }
 }

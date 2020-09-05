@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-olist-ui-evaluation',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OlistUiEvaluationComponent implements OnInit {
 
+  @Input() evaluation;
   constructor() { }
-
   ngOnInit() {
+  }
+
+  arrayOne(n: number): any[] {
+    return Array(n);
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-olist-ui-completed',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./olist-ui-completed.component.scss']
 })
 export class OlistUiCompletedComponent implements OnInit {
+
+  @Input() completed;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-olist-ui-sent',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./olist-ui-sent.component.scss']
 })
 export class OlistUiSentComponent implements OnInit {
+
+  @Input() sent;
 
   constructor() { }
 

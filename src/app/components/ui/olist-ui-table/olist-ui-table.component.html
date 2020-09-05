@@ -2,56 +2,27 @@
     <tr>
         <th>Vendedor</th>
         <th>Ativo há</th>
-        <th></th>
+        <th>{{ person.enableMentor ? '' : 'Avaliação' }}</th>
+        <th *ngIf="!person.enableMentor"></th>
     </tr>
-    <tr>
-        <td>Geovana</td>
-        <td>8 dias</td>
-        <td class='apply'>
+    <tr *ngFor="let user of users">
+        <td (click)="goToProfile(user)">{{ user.name }}</td>
+        <td>{{ user.since }}</td>
+        <td *ngIf="person.enableMentor" class='apply'>
             Candidatar
             <span class="material-icons">
                 play_circle_outline
             </span>
         </td>
-    </tr>
-    <tr>
-        <td>Jessica</td>
-        <td>10 dias</td>
-        <td>
-            Candidatar
-            <span class="material-icons">
-                play_circle_outline
+        <td *ngIf="!person.enableMentor" class='apply'>
+            <div class="evaluation">
+                <span *ngFor="let item of arrayOne(user.evaluation);" class="material-icons">
+                grade
             </span>
+            </div>
         </td>
-    </tr>
-    <tr>
-        <td>Lais</td>
-        <td>12 dias</td>
-        <td>
-            Candidatar
-            <span class="material-icons">
-                play_circle_outline
-            </span>
-        </td>
-    </tr>
-    <tr>
-        <td>Lavinia</td>
-        <td>14 dias</td>
-        <td>
-            Candidatar
-            <span class="material-icons">
-                play_circle_outline
-            </span>
-        </td>
-    </tr>
-    <tr>
-        <td>Marilia</td>
-        <td>16 dias</td>
-        <td>
-            Candidatar
-            <span class="material-icons">
-                play_circle_outline
-            </span>
+        <td *ngIf="!person.enableMentor" class='apply'>
+            Aceitar
         </td>
     </tr>
 </table>

@@ -1,16 +1,10 @@
 <section class="card">
     <app-olist-ui-info-card>
         <label>Avaliação Média</label>
-        <div class="evaluation">
-            <span class="material-icons">
+        <div *ngIf="evaluation > 0" class="evaluation">
+            <span *ngFor="let item of arrayOne(evaluation);" class="material-icons">
                 grade
             </span>
-            <span class="material-icons">
-                grade
-            </span>
-            <span class="material-icons">
-                grade
-            </span> 
         </div>
     </app-olist-ui-info-card>
 </section>

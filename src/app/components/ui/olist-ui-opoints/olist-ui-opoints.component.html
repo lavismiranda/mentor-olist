@@ -1,10 +1,10 @@
-<section class="card">
+<section [ngClass]="{ 'disabled': oPoints === 0, 'card': oPoints > 0}">
     <app-olist-ui-info-card>
         <div class="oPoints">
             <span class="material-icons">
                 monetization_on
             </span>
-            <span>1000</span>
+            <span>{{ oPoints }}</span>
         </div>
         <label>oPoints</label>
     </app-olist-ui-info-card>
