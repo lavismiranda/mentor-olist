@@ -22,10 +22,12 @@
         justify-content: space-between;
     }
 
-    .table{
-        font-size: 2.2rem;
-        font-family: var(--e-global-typography-primary-font-family);
+    .screen .table{
+        width: 60vw;
 
-        align-items: flex-start;      
+        font-size: 2rem;
+        font-family: var(--e-global-typography-primary-font-family);
+        
+        margin-top: 2.8rem;
     }
 }

@@ -1,14 +1,14 @@
 <table>
     <tr>
         <th>Vendedor</th>
-        <th>Ativo há</th>
+        <th>Ativo desde</th>
         <th>{{ person.enableMentor ? '' : 'Avaliação' }}</th>
         <th *ngIf="!person.enableMentor"></th>
     </tr>
     <tr *ngFor="let user of users">
         <td (click)="goToProfile(user)">{{ user.name }}</td>
         <td>{{ user.since }}</td>
-        <td *ngIf="person.enableMentor" class='apply'>
+        <td *ngIf="person.enableMentor" class='apply' id='apply'>
             Candidatar
             <span class="material-icons">
                 play_circle_outline
@@ -21,8 +21,11 @@
             </span>
             </div>
         </td>
-        <td *ngIf="!person.enableMentor" class='apply'>
+        <td *ngIf="!person.enableMentor" class='apply' id='apply'>
             Aceitar
+            <span class="material-icons">
+                check_circle_outline
+            </span>
         </td>
     </tr>
 </table>

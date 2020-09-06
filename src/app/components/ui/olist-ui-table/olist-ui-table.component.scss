@@ -1,23 +1,39 @@
 :host{
     table {
-        width: 60vw;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 2rem 0;
+    }
+
+    th{
+        color: var(--principal-purple);
+        font-weight: 900;
     }
       
     td, th {
-        background-color: #C0BFD6;
         text-align: left;
-        padding: 12px;
+        padding: 0.6rem 1rem;
     }
     
-    tr:nth-child(even) {
-        background-color: #C0BFD6 !important;
+    table tr:nth-child(odd) {
+        background-color: #EAEAF4;
+    }
+    table tr:nth-child(even) {
+        background-color: #F5F5FB;
+    }
+
+    #apply{
+        column-gap: 1.2rem;
+        display: flex;
+        align-self: center;
+    }
+
+    .apply, .material-icons{
+        align-items: center;
+        font-weight: 700;
     }
 
     .material-icons{
         color: var(--principal-purple);
-    }
-
-    .material-icons .apply{
-        text-align: center;
     }
 }
