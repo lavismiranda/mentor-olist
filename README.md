@@ -1,27 +1,15 @@
 # OlistMentorApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+O projeto <b>olist-mentor</b> consiste em uma plataforma gamificada que incentiva a aprendizagem através de treinamentos e mentorias, e tem como recompensa o acúmulo de pontos para trocas por benefícios. O nosso foco principal é em disponibilizar mentorias através dos próprios vendedores para aqueles iniciantes na plataforma, reduzindo a utilização do suporte do olist e aumentando o score destes, para que possam trocar por benefícios próprios dentro da plataforma do olist.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Utilizamos Angular para o desenvolvimento e Angular Material para alguns componentes do Layout. Os dados da tela estão mockados em formato JSON. 
 
-## Code scaffolding
+Na tela inicial/ Dashboard, é possível simular a visão do Mentor ou do Novo Vendedor. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para subir o projeto, é necessário rodar `ng serve` no terminal. 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
