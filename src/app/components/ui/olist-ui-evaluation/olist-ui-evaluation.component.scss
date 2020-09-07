@@ -1,5 +1,8 @@
-:host{
-    .card{
+:host {
+    .card {
         background-color: var(--principal-yellow);
+    }
+    .disabled {
+        background-color: var(--light-grey);
     }
 }

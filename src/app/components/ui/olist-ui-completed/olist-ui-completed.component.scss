@@ -1,15 +1,16 @@
-:host{
-    .card{
+:host {
+    .card {
         background-color: var(--principal-red);
     }
-    
-    .completed{        
+    .completed {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .completed .material-icons{
+    .completed .material-icons {
         margin-right: 0.8rem;
+    }
+    .disabled {
+        background-color: var(--light-grey);
     }
 }

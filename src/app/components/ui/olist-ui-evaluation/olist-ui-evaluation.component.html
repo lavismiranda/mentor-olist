@@ -1,4 +1,4 @@
-<section class="card">
+<section class="card" [ngClass]="{'disabled': evaluation === 0}">
     <app-olist-ui-info-card>
         <label>Avaliação Média</label>
         <div *ngIf="evaluation > 0" class="evaluation">
