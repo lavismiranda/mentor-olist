@@ -6,9 +6,9 @@
         <th *ngIf="!person.enableMentor"></th>
     </tr>
     <tr *ngFor="let user of users">
-        <td (click)="goToProfile(user)">{{ user.name }}</td>
+        <td [ngClass]="{'clickable' : !person.enableMentor}" (click)="goToProfile(user)">{{ user.name }}</td>
         <td>{{ user.since }}</td>
-        <td *ngIf="person.enableMentor" class='apply' id='apply'>
+        <td (click)="toApply(user.name)" *ngIf="person.enableMentor" class='apply clickable' id='apply'>
             Candidatar
             <span class="material-icons">
                 play_circle_outline
@@ -21,7 +21,7 @@
             </span>
             </div>
         </td>
-        <td *ngIf="!person.enableMentor" class='apply' id='apply'>
+        <td (click)="toAccept(user.name)" *ngIf="!person.enableMentor" class='apply clickable' id='apply'>
             Aceitar
             <span class="material-icons">
                 check_circle_outline

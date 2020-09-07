@@ -1,39 +1,41 @@
-:host{
+:host {
     table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 2rem 0;
     }
-
-    th{
+    th {
         color: var(--principal-purple);
         font-weight: 900;
     }
-      
-    td, th {
+    td,
+    th {
         text-align: left;
         padding: 0.6rem 1rem;
     }
-    
     table tr:nth-child(odd) {
         background-color: #EAEAF4;
     }
     table tr:nth-child(even) {
         background-color: #F5F5FB;
     }
-
-    #apply{
+    #apply {
         column-gap: 1.2rem;
         display: flex;
         align-self: center;
     }
-
-    .apply, .material-icons{
+    .apply,
+    .material-icons {
         align-items: center;
         font-weight: 700;
     }
-
-    .material-icons{
+    .material-icons {
         color: var(--principal-purple);
+    }
+    .clickable {
+        cursor: pointer;
+    }
+    .clickable:hover {
+        color: var(--principal-purple)
     }
 }
