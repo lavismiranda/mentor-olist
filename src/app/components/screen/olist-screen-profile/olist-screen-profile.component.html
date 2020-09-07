@@ -1,13 +1,12 @@
 <div class="screen">
-    <app-olist-ui-toolbar [name]="user.name"></app-olist-ui-toolbar>
-
+    <app-olist-ui-toolbar [person]="user.person"></app-olist-ui-toolbar>
     <div class="profile-container">
-        <app-olist-ui-profile class='profile'></app-olist-ui-profile>
+        <app-olist-ui-profile [name]="user.name" class='profile'></app-olist-ui-profile>
 
         <div class='infos'>
-            <app-olist-ui-sent></app-olist-ui-sent>
-            <app-olist-ui-completed></app-olist-ui-completed>
-            <app-olist-ui-evaluation></app-olist-ui-evaluation>
+            <app-olist-ui-sent [sent]="user.sent"></app-olist-ui-sent>
+            <app-olist-ui-completed [completed]="user.completed"></app-olist-ui-completed>
+            <app-olist-ui-evaluation [evaluation]="user.evaluation"></app-olist-ui-evaluation>
         </div>
 
         <app-olist-ui-coment></app-olist-ui-coment>

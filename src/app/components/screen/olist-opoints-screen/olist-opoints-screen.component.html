@@ -1,0 +1,12 @@
+<app-olist-ui-toolbar [person]="user"></app-olist-ui-toolbar>
+<app-olist-screen-dashboard [person]="user" [view]="view" [users]="users"></app-olist-screen-dashboard>
+<footer>
+    <mat-radio-group (change)="viewChanged($event)" [(ngModel)]="view">
+        <mat-radio-button value="mentor">
+            Mentor View
+        </mat-radio-button>
+        <mat-radio-button value="seller">
+            New Seller View
+        </mat-radio-button>
+    </mat-radio-group>
+</footer>
