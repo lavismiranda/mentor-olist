@@ -25,6 +25,9 @@ import { OlistScreenProfileComponent } from './components/screen/olist-screen-pr
 import { OlistUiProfileComponent } from './components/ui/olist-ui-profile/olist-ui-profile.component';
 import { OlistUiComentComponent } from './components/ui/olist-ui-coment/olist-ui-coment.component';
 import { OlistOpointsScreenComponent } from './components/screen/olist-opoints-screen/olist-opoints-screen.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { OlistDialogComponent } from './components/ui/olist-dialog/olist-dialog.component';
+
 export const isMock = environment.mock;
 
 @NgModule({
@@ -41,8 +44,10 @@ export const isMock = environment.mock;
     OlistScreenProfileComponent,
     OlistUiProfileComponent,
     OlistUiComentComponent,
-    OlistOpointsScreenComponent
+    OlistOpointsScreenComponent,
+    OlistDialogComponent
   ],
+  entryComponents: [OlistDialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -52,7 +57,8 @@ export const isMock = environment.mock;
     MatToolbarModule,
     MatMenuModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [{
       provide: HTTP_INTERCEPTORS,
