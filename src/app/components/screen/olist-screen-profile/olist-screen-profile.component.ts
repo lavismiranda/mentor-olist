@@ -13,6 +13,9 @@ private user: any;
   }
 
   ngOnInit() {
+    if(!history.state.enableMentor){
+      this.router.navigateByUrl('/dashboard');
+    }
     this.user = history.state;
   }
 
