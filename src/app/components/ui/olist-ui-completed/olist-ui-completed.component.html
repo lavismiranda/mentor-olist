@@ -1,4 +1,4 @@
-<section class="card">
+<section class="card" [ngClass]="{'disabled': completed === 0}">
     <app-olist-ui-info-card>
         <div class="completed">
             <span class="material-icons">

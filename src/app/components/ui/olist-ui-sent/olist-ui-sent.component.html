@@ -1,4 +1,4 @@
-<section class="card">
+<section class="card" [ngClass]="{'disabled': sent === 0}">
     <app-olist-ui-info-card>
         <div class="sent">
             <span class="material-icons">
