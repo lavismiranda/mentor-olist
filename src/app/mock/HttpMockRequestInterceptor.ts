@@ -3,6 +3,7 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } fr
 import { Observable, of } from 'rxjs';
 import * as sellers from './data/sellers.json'
 import * as mentor from './data/mentor.json'
+import * as mentor2 from './data/mentor_2.json'
 import * as mentors from './data/mentors.json'
 import * as seller from './data/seller.json'
 
@@ -22,6 +23,10 @@ const urls = [
     {
         url: 'http://localhost:4200/api/seller',
         json: seller
+    },
+    {
+        url: 'http://localhost:4200/api/2/mentor',
+        json: mentor2
     }
 ];
 

@@ -1,5 +1,5 @@
 <div class="screen">
-    <app-olist-ui-toolbar [person]="user.person"></app-olist-ui-toolbar>
+    <app-olist-ui-toolbar [person]="person"></app-olist-ui-toolbar>
     <div class="profile-container">
         <app-olist-ui-profile [name]="user.name" class='profile'></app-olist-ui-profile>
 
@@ -9,6 +9,6 @@
             <app-olist-ui-evaluation [evaluation]="user.evaluation"></app-olist-ui-evaluation>
         </div>
 
-        <app-olist-ui-coment></app-olist-ui-coment>
+        <app-olist-ui-coment [comments]="user.feedbacks"></app-olist-ui-coment>
     </div>
 </div>

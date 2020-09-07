@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MentorService } from 'src/app/service/mentor/mentor.service';
 
 @Component({
   selector: 'app-olist-screen-profile',
@@ -8,7 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class OlistScreenProfileComponent implements OnInit {
 private user: any;
-  constructor(private route: ActivatedRoute, private router: Router) { 
+private person: any;
+  constructor(private mentorService: MentorService, private router: Router) { 
     this.user = this.router.getCurrentNavigation().extras.state;
   }
 
@@ -16,7 +18,13 @@ private user: any;
     if(!history.state.enableMentor){
       this.router.navigateByUrl('/dashboard');
     }
-    this.user = history.state;
+    this.person = history.state.person;
+    let id = history.state.id;
+    this.mentorService.getMentorById(id).subscribe( response =>{
+          this.user = response;
+    });
+
+
   }
 
 }

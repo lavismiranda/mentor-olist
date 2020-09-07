@@ -10,6 +10,10 @@ export class MentorService {
   public getMentor(){
     return this.http.get<Mentor>('http://localhost:4200/api/mentor');
   }
+
+   public getMentorById(id: number){
+    return this.http.get<Mentor>(`http://localhost:4200/api/${id}/mentor`);
+  }
   public getMentors(){
     return this.http.get<Mentor[]>('http://localhost:4200/api/mentors');
   }
