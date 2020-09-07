@@ -1,6 +1,4 @@
-import { Seller } from './model/seller';
-import { Mentor } from './model/mentor';
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  view: string = 'mentor';
   constructor(){}
 }

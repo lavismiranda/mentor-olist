@@ -24,6 +24,7 @@ import { OlistUiEvaluationComponent } from './components/ui/olist-ui-evaluation/
 import { OlistScreenProfileComponent } from './components/screen/olist-screen-profile/olist-screen-profile.component';
 import { OlistUiProfileComponent } from './components/ui/olist-ui-profile/olist-ui-profile.component';
 import { OlistUiComentComponent } from './components/ui/olist-ui-coment/olist-ui-coment.component';
+import { OlistOpointsScreenComponent } from './components/screen/olist-opoints-screen/olist-opoints-screen.component';
 export const isMock = environment.mock;
 
 @NgModule({
@@ -39,7 +40,8 @@ export const isMock = environment.mock;
     OlistUiEvaluationComponent,
     OlistScreenProfileComponent,
     OlistUiProfileComponent,
-    OlistUiComentComponent
+    OlistUiComentComponent,
+    OlistOpointsScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +59,7 @@ export const isMock = environment.mock;
       useClass: isMock ? HttpMockRequestInterceptor : HttpRequestInterceptor,
       multi: true
       }, MentorService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [OlistScreenDashboardComponent, OlistScreenProfileComponent]
 })
 export class AppModule { }

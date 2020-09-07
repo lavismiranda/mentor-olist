@@ -15,8 +15,11 @@ export class OlistUiTableComponent implements OnInit {
   arrayOne(n: number): any[] {
     return Array(n);
   }
-  goToProfile(user: any) {
-        this.router.navigateByUrl('profile');
+  goToProfile(data: any) {
+    if(!this.person.enableMentor){
+      data.person = this.person;
+      this.router.navigate(['/profile'], {state: data});
+    }
 };
 
 }

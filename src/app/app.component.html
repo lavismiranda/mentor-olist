@@ -1,14 +1,1 @@
-<app-olist-screen-dashboard *ngIf="view === 'mentor'" userType="mentor"></app-olist-screen-dashboard>
-<app-olist-screen-dashboard *ngIf="view === 'seller'" userType="seller"></app-olist-screen-dashboard>
-<footer>
-    <mat-radio-group [(ngModel)]="view">
-        <mat-radio-button value="mentor">
-            Mentor View
-        </mat-radio-button>
-        <mat-radio-button value="seller">
-            New Seller View
-        </mat-radio-button>
-    </mat-radio-group>
-</footer> 
-
-<!-- <app-olist-screen-profile></app-olist-screen-profile>-->
+<router-outlet></router-outlet>
